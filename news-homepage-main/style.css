@@ -8,57 +8,87 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: hsl(36, 100%, 99%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
 main{
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* height: 100vh; */
 }
 
-
- .one{
+nav{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    width: 90%;
+    /* border: 3px solid black; */
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%)
+}
+
+a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.one{
+    width: 55rem;
+    height: 20rem;
     grid-area: one;
 }
 
-.one  a{
-    padding: 20px;
-    text-decoration: none;
-    color: hsl(236, 13%, 42%);
+.one img{
+    width: 100%;
+    height: 100%;
 }
 
 .two{
-    padding: 20px;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
     grid-area: two;
-    width: 60rem;
-    height: 20rem;
 }
 
-.two img{
-    height: 100%;
-    width: 100%;
+.two h2{
+    padding: 20px;
 }
+
+.two h3{
+    padding: 20px;
+}
+
+.two p{
+    padding: 20px;
+}
+
+.two h3{
+    cursor: pointer;
+}
+
+.two h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.two h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+
 
 .three{
     padding: 20px;
-    background-color: hsl(240, 100%, 5%);
-    color: hsl(36, 100%, 99%);
     grid-area: three;
 }
 
-.three h2{
-    color: hsl(35, 77%, 62%);
-    padding: 20px;
-}
-
-.three h3, p{
-    padding: 20px;
+.three p{
+    font-weight:bolder;
+    font-size: 60px;
 }
 
 .four{
@@ -66,64 +96,112 @@ main{
     grid-area: four;
 }
 
+.four p{
+    padding-bottom: 20px;
+}
+
+.four button{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+}
+
+.four button:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
 .five{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: start;
-    padding: 20px;
     grid-area: five;
 }
 
-.five button{
-    background-color: hsl(5, 85%, 63%);
-    padding: 10px 30px;
-    color: hsl(36, 100%, 99%);
-    border: none;
+.five .image{
+    height: 12rem;
+    width: 10rem;
+}
+
+.five img{
+    height: 100%;
+    width: 100%;
+}
+
+.five h2 {
+    padding: 20px;
+}
+
+.five h3{
+    padding: 0 10px;
 }
 
 .five p{
-    color: hsl(236, 13%, 42%);   
+    padding: 10px;
 }
-
 .six{
-    padding: 20px;
     display: flex;
     grid-area: six;
 }
 
-.six .text h2, h3, p{
+.six .image{
+    height: 12rem;
+    width: 10rem;
+}
+
+.six img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.six h2 {
     padding: 20px;
 }
 
+.six h3{
+    padding: 0 10px;
+}
+
+.six p{
+    padding: 10px;
+}
+
 .seven{
-    padding: 20px;
     display: flex;
     grid-area: seven;
 }
 
-.seven .text h2, h3, p{
+.seven .image{
+    height: 12rem;
+    width: 14rem;
+}
+
+.seven img{
+    height: 100%;
+    width: 100%;
+}
+
+.seven h2 {
     padding: 20px;
 }
 
-.eight{
-    padding: 20px;
-    display: flex;
-    grid-area: eight;
+.seven h3{
+    padding: 0 10px;
 }
 
-.eight .text h2, h3, p{
-    padding: 20px;
-} *
+.seven p{
+    padding: 10px;
+}
 
 .container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 15px;
-    grid-template-areas: "one one one"
-    "two two three"
-    "four five three"
-    "six seven eight";
+    width: 80%;
+    height: 70%;
+    justify-content: center;
+    grid-template-areas: "one one two"
+    "three four two"
+    "five six seven";
 }
