@@ -300,3 +300,63 @@ main{
     color: hsl(236, 100%, 87%);
     padding: 20px;
 }
+
+
+@media screen and (max-width: 800px) {
+    main{
+        display: flex;
+        width: 100%;
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column;
+    }
+    .one{
+        width: 100%;
+    }
+
+    .one .top{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .two .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .three .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+     .four .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .five .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .six .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .seven .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
